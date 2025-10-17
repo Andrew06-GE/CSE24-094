@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.banking.Controller.TransactionController"
+      spacing="20" style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      prefWidth="800" prefHeight="600">
+
+    <Label text=" Transactions"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #0066cc;"/>
+
+    <VBox spacing="15" alignment="CENTER" style="-fx-padding: 20;">
+        <Button text=" Deposit Money" onAction="#handleDeposit"
+                style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="250" prefHeight="50"/>
+
+        <Button text=" Withdraw Money" onAction="#handleWithdraw"
+                style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="250" prefHeight="50"/>
+
+        <Button text=" Apply Monthly Interest" onAction="#handleApplyInterest"
+                style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="250" prefHeight="50"/>
+    </VBox>
+
+    <VBox spacing="10" style="-fx-padding: 10;">
+        <Label text="Transaction Log:" style="-fx-font-weight: bold;"/>
+        <TextArea fx:id="outputArea" prefHeight="200" editable="false"
+                  style="-fx-font-family: 'Consolas'; -fx-font-size: 12px;"/>
+    </VBox>
+
+    <Button text="← Back to Main Menu" onAction="#handleBackToMain"
+            style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #cccccc; -fx-text-fill: black;"
+            prefWidth="200" prefHeight="40"/>
+</VBox>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.com.banking.Controller.AccountManagementController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f5f5f5;"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="Account Management"
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0066cc;"/>
+
+    <!-- Account Creation Input Section -->
+    <VBox spacing="10" style="-fx-padding: 15; -fx-background-color: white; -fx-border-color: #cccccc; -fx-border-radius: 5;">
+        <Label text="Create New Account:" style="-fx-font-weight: bold;"/>
+
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Customer ID:" prefWidth="100"/>
+            <TextField fx:id="customerIdField" promptText="" prefWidth="150"/>
+            <Label text="Branch:" prefWidth="60"/>
+            <TextField fx:id="branchField" promptText="" prefWidth="120"/>
+            <Label text="Initial Balance:" prefWidth="100"/>
+            <TextField fx:id="initialBalanceField" promptText="e.g., 1000.00" prefWidth="120"/>
+        </HBox>
+
+        <!-- Additional fields for Cheque Account -->
+        <VBox spacing="10" style="-fx-padding: 10; -fx-background-color: #f9f9f9;">
+            <Label text="For Cheque Accounts Only:" style="-fx-font-weight: bold; -fx-font-size: 12px;"/>
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Employer Name:" prefWidth="100"/>
+                <TextField fx:id="employerNameField" promptText="" prefWidth="200"/>
+                <Label text="Employer Address:" prefWidth="100"/>
+                <TextField fx:id="employerAddressField" promptText="" prefWidth="200"/>
+            </HBox>
+        </VBox>
+    </VBox>
+
+    <!-- Account Creation Buttons -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Open Savings Account"
+                onAction="#handleOpenSavingsAccount"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="Open Investment Account"
+                onAction="#handleOpenInvestmentAccount"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #2196F3; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="Open Cheque Account"
+                onAction="#handleOpenChequeAccount"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+    </HBox>
+
+    <!-- View Information Section -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="View All Customers"
+                onAction="#handleViewAllCustomers"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #9C27B0; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="View Customer Accounts"
+                onAction="#handleViewCustomerAccounts"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #607D8B; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+    </HBox>
+
+    <!-- Output Area -->
+    <VBox spacing="5" VBox.vgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Output:" style="-fx-font-weight: bold;"/>
+            <Button text="Clear Output"
+                    onAction="#handleClearOutput"
+                    style="-fx-font-size: 12px; -fx-background-color: #dc3545; -fx-text-fill: white; -fx-border-radius: 3; -fx-background-radius: 3;"
+                    prefWidth="100" prefHeight="25"/>
+            <Button text="Clear Input Fields"
+                    onAction="#handleClearInputFields"
+                    style="-fx-font-size: 12px; -fx-background-color: #6c757d; -fx-text-fill: white; -fx-border-radius: 3; -fx-background-radius: 3;"
+                    prefWidth="120" prefHeight="25"/>
+        </HBox>
+        <TextArea fx:id="outputArea"
+                  editable="false"
+                  wrapText="true"
+                  VBox.vgrow="ALWAYS"
+                  style="-fx-font-family: 'Consolas', 'Monospaced'; -fx-font-size: 12px; -fx-border-color: #cccccc;"/>
+    </VBox>
+
+    <!-- Navigation -->
+    <HBox alignment="CENTER" style="-fx-padding: 10;">
+        <Button text="Back to Main Menu"
+                onAction="#handleBackToMain"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #6c757d; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;"
+                prefWidth="180" prefHeight="40"/>
+    </HBox>
+</VBox>

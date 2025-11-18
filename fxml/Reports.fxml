@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.com.banking.Controller.ReportsController"
+      spacing="15" style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      prefWidth="800" prefHeight="600">
+
+    <Label text="Reports"
+           style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #0066cc;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="👥 Customer Report" onAction="#handleCustomerReport"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="📊 Accounts Summary" onAction="#handleAccountsSummary"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="💳 Transaction Report" onAction="#handleTransactionReport"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="180" prefHeight="40"/>
+
+        <Button text="🗑️ Clear Report" onAction="#handleClearReport"
+                style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: white; -fx-text-fill: black; -fx-border-color: darkgray; -fx-border-width: 3px;"
+                prefWidth="120" prefHeight="40"/>
+    </HBox>
+
+    <VBox spacing="10" VBox.vgrow="ALWAYS">
+        <Label text="Report Output:" style="-fx-font-weight: bold;"/>
+        <TextArea fx:id="reportArea" editable="false" VBox.vgrow="ALWAYS"
+                  style="-fx-font-family: 'Consolas'; -fx-font-size: 12px;"/>
+    </VBox>
+
+    <Button text="← Back to Main Menu" onAction="#handleBackToMain"
+            style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #cccccc; -fx-text-fill: black;"
+            prefWidth="200" prefHeight="40"/>
+</VBox>

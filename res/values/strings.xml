@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GabsStudentStay</string>
+    <string name="tagline">Find your space in Gaborone</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="phone_number">Phone Number</string>
+
+    <!-- Listings -->
+    <string name="listings">Listings</string>
+    <string name="search_hint">Search by name or location…</string>
+    <string name="filter">Filter</string>
+    <string name="no_listings">No listings available</string>
+    <string name="available_from">Available from</string>
+    <string name="deposit">Deposit</string>
+    <string name="pay_deposit">Pay Deposit</string>
+    <string name="already_reserved">Already Reserved</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="chat_landlord">Chat with Landlord</string>
+
+    <!-- Filter -->
+    <string name="filter_title">Filter Listings</string>
+    <string name="price_range">Price Range (BWP)</string>
+    <string name="location">Location</string>
+    <string name="room_type">Room Type</string>
+    <string name="available_from_label">Available From (YYYY-MM-DD)</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="clear_filter">Clear</string>
+
+    <!-- Deposit -->
+    <string name="payment_title">Pay Deposit</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_expiry">Expiry (MM/YY)</string>
+    <string name="card_cvv">CVV</string>
+    <string name="card_name">Name on Card</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="payment_success">Payment Successful!</string>
+    <string name="done">Done</string>
+
+    <!-- Reservations -->
+    <string name="my_reservations">My Reservations</string>
+    <string name="no_reservations">No reservations yet</string>
+
+    <!-- Chat -->
+    <string name="chat">Chat</string>
+    <string name="no_chats">No conversations yet</string>
+    <string name="type_message">Type a message…</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="my_preferences">My Preferences</string>
+    <string name="min_price">Min Price (BWP)</string>
+    <string name="max_price">Max Price (BWP)</string>
+    <string name="save_preferences">Save Preferences</string>
+
+    <!-- Map -->
+    <string name="select_campus">Select Campus</string>
+    <string name="show_route">Show Route</string>
+
+    <!-- Navigation -->
+    <string name="nav_listings">Listings</string>
+    <string name="nav_reservations">Reservations</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_profile">Profile</string>
+    <string name="logout">Logout</string>
+</resources>

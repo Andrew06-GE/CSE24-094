@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="56dp"
+    android:layout_marginEnd="6dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Interior photo" />
+
+    <View
+        android:id="@+id/thumbnailOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#551A3A5C"
+        android:visibility="gone" />
+
+</FrameLayout>

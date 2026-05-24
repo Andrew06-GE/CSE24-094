@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple house vector — replaces ic_house_placeholder references throughout the project -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Roof -->
+    <path
+        android:fillColor="#1A3A5C"
+        android:pathData="M12,3L2,12H5V21H19V12H22L12,3Z" />
+
+    <!-- Door -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,21V15H14V21H10Z" />
+
+    <!-- Window left -->
+    <path
+        android:fillColor="#F5A623"
+        android:pathData="M7,13H9V15H7V13Z" />
+
+    <!-- Window right -->
+    <path
+        android:fillColor="#F5A623"
+        android:pathData="M15,13H17V15H15V13Z" />
+
+</vector>

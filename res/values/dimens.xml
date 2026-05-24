@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- spacing -->
+    <dimen name="input_spacing">12dp</dimen>
+
+    <!-- button sizes -->
+    <dimen name="button_height">48dp</dimen>
+
+    <!-- listing detail -->
+    <dimen name="detail_image_height">220dp</dimen>
+
+</resources>
